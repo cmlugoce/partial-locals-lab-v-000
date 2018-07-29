@@ -17,11 +17,11 @@ class Student < ActiveRecord::Base
 def self.search(name)
  if name.present?
    where('name like ?', "%#{name}%")
- else 
-   self.all 
- end 
-end 
-  
+ else
+   self.all
+ end
+end
 
-  
+
+
 end
